@@ -1,3 +1,11 @@
+     _________  ___  _________  ________     
+    |\___   ___\\  \|\___   ___\\   __  \    
+    \|___ \  \_\ \  \|___ \  \_\ \  \|\  \   
+         \ \  \ \ \  \   \ \  \ \ \  \\\  \  
+          \ \  \ \ \  \   \ \  \ \ \  \\\  \ 
+           \ \__\ \ \__\   \ \__\ \ \_______\
+            \|__|  \|__|    \|__|  \|_______|
+
 # TITO-Framework
 
 ## TITO is a light framework for operationalizing threat intelligence that is platform and data agnostic.
