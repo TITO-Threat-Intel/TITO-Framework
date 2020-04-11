@@ -50,7 +50,7 @@ If you're talking about support to operations (I'll acknowledge but skip over su
     * Will this create false positives? (Craft Finished Products, Fight for Feedback)
     * Will this negatively impact operations? (Craft Finished Products, Fight for Feedback)
     * How will I know it works? How do I know when it stops working? (Craft Finished Products, Fight for Feedback)
-* BONUS: Decay or "age-out" indicators 
+* BONUS: Decay or "age out" indicators 
     * How much of my giant blacklist is still relevant? (Fight for Feedback)
     * How can I make my list more relevant in the future? (Fight for Feedback)
 
