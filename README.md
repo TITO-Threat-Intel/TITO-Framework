@@ -1,11 +1,3 @@
- _________  ___  _________  ________     
-|\___   ___\\  \|\___   ___\\   __  \    
-\|___ \  \_\ \  \|___ \  \_\ \  \|\  \   
-     \ \  \ \ \  \   \ \  \ \ \  \\\  \  
-      \ \  \ \ \  \   \ \  \ \ \  \\\  \ 
-       \ \__\ \ \__\   \ \__\ \ \_______\
-        \|__|  \|__|    \|__|  \|_______|
-
 # TITO-Framework
 
 ## TITO is a light framework for operationalizing threat intelligence that is platform and data agnostic.
@@ -55,6 +47,8 @@ If you're talking about support to operations (I'll acknowledge but skip over su
     * How can I make my list more relevant in the future? (Fight for Feedback)
 
 You can see how, in the above context, **Workstream Sample 1** is still good work. But, we have a lot of thinking to do about what the impact of this effort is on the big picture, and thinking like **Workstream 2** allows us to do this. **Workstream 2** also opens up a whole other world of assessments we can do, based on the deep and rich history of analyst tradecraft, to support the business or the mission, operations, tactics; and the full spectrum of decision-makers in between.
+
+## In Summary
 
 I realize my examples here are oversimplified and incomplete -- but, they're for illustration purposes only and not meant to belittle the work anyone is doing. There are many wonderful threat intelligence analysts our there, and many are intuitively achieving great wins for their organizations. But, I think we can all do better - from the most junior to the most elite professionals. 
 
