@@ -2,7 +2,7 @@
 
 The TITO Framework for Threat Intelligence always starts with an understanding and ranking of the **THREAT**. It's foundational in threat intelligence to define what it means to be a threat, and you can't outsource this. Aligning what you consider a threat based on on an industry vertical doesn't really work because attacks don't happen by vertical in the real world. Chasing blogs doesn't work either -- in fact, it's a clear sign of an immature threat intel program, or even worse: an inexperienced leadership team which pushes their InfoSec experts to focus only on the latest news stories and respond to crises. 
 
-Most commercial Threat Intelligence companies can't define your threat for you either, because they don't have the data necessary to tailor intelligence in a way that's impactful. Enter, the TITO Framework 
+Most commercial Threat Intelligence companies can't define your threat for you either, because they don't have the data necessary to tailor intelligence in a way that's impactful. Enter, **the TITO Framework**. 
 
 The TITO Framework starts with the threat, but it also has a prerequisite: that you well understand the business, mission, or objective you're trying to perform in spite of your adversaries, and what you're trying to protect to accomplish this. The things you're trying to protect could be crown jewel IT or OT systems for example, or critical infrastructure; or anything else that, if compromised, would result in failure. *Compromise* here refers to the measurable impact from a breach in confidentiality, integrity, or availability, of course.
 
