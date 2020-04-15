@@ -1,8 +1,8 @@
 # Step 2: Threat Tracking
 
-Once you've identified the *threat* as defiined in **Step 1**, it's time to track relevant and actionable information. This means moving on to the other three elements of the TITO Framework, namely, the "-ITO."
+Once you've identified the *threat* as defined in **Step 1**, it's time to track relevant and actionable information. This means moving on to the other three elements of the TITO Framework, namely, the "-ITO."
 
-The TITO framework is separated into two different phases because really, they are two distinct elements. In essence, identifying THREAT tells you **where** to apply the rest of the framework. If you successfully mitigate the threat by removing points, you no longer have to go through the -ITO elements for those threats. Think of TITO then as a living creature, and by eliminating the first *T*, you've cut the head off the beast: you no longer have to worry about the arms and legs.
+The TITO framework is grouped into two core phases, with four elements. In essence, identifying THREAT tells you **where** to apply the rest of the framework. If you successfully mitigate the threat by removing points, you no longer have to go through the -ITO elements for those threats. Think of TITO then as a living creature, and by eliminating the first *T*, you've cut the head off the beast: you no longer have to worry about the arms and legs.
 
 As long as the threat still exists, you need to be doing the rest of these things:
 
@@ -14,20 +14,20 @@ While identifying and tracking infrastructure used by a threat actor in an incid
 * What ASNs do they prefer? Are they residential, commercial, corporate/private, cloud-based?
 * What email patterns, DNS patterns, text patterns, and temporal patterns are used?
 * What user agents are presented at entry points? Are they headless? Are they tool or test-kit based?
-* How do they (or do they even try to) blend in with normal traffic?
+* How do they (or do they even try to) hide their origin?
 * How often do they change infrastructure used?
 * When they build and test exploits, do they use their own infrastructure?
-* Where do they go to learn about, develop, test, and/or buy infrasctucture?
-* How do they identify themselves in forums, irc, chats, etc.?
+* Where do they go to learn about, develop, test, and/or buy infrastructure?
+* How do they identify themselves in forums, IRC, chats, etc.?
 * Do they leverage mobile infrastructure or mobile emulators?
 * How do they pay for services? Are they rented, or hijacked?
 * How long does the infrastructure used typically last before it is burned, flagged, or blacklisted?
 
-This is just a short list off the top of my head -- I'm sure I missed a lot but you get the point. Ask as many questions as you can, because the more you can log and find patterns in, the better you'll be able to set a baseline for the threat and identify changes. This becomes super important later.
+This is just a short list off the top of my head -- I'm sure I missed a lot but you get the point. Ask as many questions as you can, because the more you find patterns in and log, the better you'll be able to set a baseline for the threat and identify changes. This becomes super important later.
 
-Notice I didn't offer any specific tools, vendors, or data sets here. There are *countless* numbers of sources, some great and some just OK. I've literally evaluated hundreds in the past couple years, and I can say honestly that the best solution is the one that best fits the threats you face and the resources you have available. For the same reason, I've left the definition of infrastructure fairly loose, too, and for the same reason. Above I've called out both delivery channels and the features of that channel.
+Notice I didn't offer any specific tools, vendors, or data sets here. There are *countless* numbers of sources, some great and some just OK. I've literally evaluated hundreds in the past couple years, and I can say honestly that the best solution is the one that best fits the threats you face and the resources -- people, money, and institutional support -- you have available. For the same reason, I've left the definition of infrastructure fairly loose, too. In my brainstormed list of questions above, I've called out both infrastructure and potential markers of the acquisition and development of new infrastructure. Both are important.
 
-Also note, I didn't talk a lot about *attribution* either. I've had many conversations with CISOs, executives, and technical experts alike, and while all agree attribution is extremely hard, I tend to argue it's not super important. Mostly this is because so many have built their entire business and reputation on having provided attribution somewhere or in some form, and I like to understand others' frame of reference in threat intel. While I respect these researchers and companies immensely, I argue just one point: Attribution only matters in so much as you're willing (or able) to take action on this information. Law enforcement and government certainly care about this very much, and should. Businesses shouldn't care as much, for the most part. It's certainly case-by-case and may be necessary in yours, but attribution isn't for the faint of heart -- you'd better have the resources to do it, and a strong, experienced analytical team that understands and challenges the inevitable confirmation bias that will certainly be present. 
+Also note, I didn't talk a lot about *attribution* either. I've had many conversations with CISOs, executives, and technical experts alike, and while all agree attribution is extremely hard, I tend to argue it's not super important in most cases. I feel attribution only matters in so much as you're willing (or able) to take action on this information. Law enforcement and government certainly care about this very much, and should. Businesses shouldn't care as much, for the most part. It's certainly case-by-case and may be necessary in yours, but attribution isn't for the faint of heart -- you'd better have the resources to do it; and a strong, experienced analytical team that understands how to mitigate the inevitable confirmation bias that will certainly be present. 
 
 In nearly every case, tracking infrastructure (past, current, and potential future) is relevant. In almost every case, an adversary is going to HAVE to come in direct contact with your infrastructure, hosts, or people. Identifying the vehicle used to do this gives you insight into your attackers' sophistication level, plus possible evolutions. What you do with that information is covered in **Step 3**. More to come on this.
 
