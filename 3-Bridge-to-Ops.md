@@ -9,11 +9,23 @@ Generally, the process looks like this:
 
 ![alt text](https://github.com/TITO-Threat-Intel/TITO-Framework/blob/master/TITO_grphk.jpg "TITO Framework")
 
-## Evaluate the Threat
+First thing first is, evaluate the threat. How do we do this, when it seems *everything* can target us? One gap, one new 0-day, and we're owned. Right? Yes, but... let's focus down first on what we can manage. The idea here is to prioritize based on potenial impact to our mission or business and broaden down from there. There's a saying you've probably heard: "You can't boil the ocean." In this phase we're casting a net for the most dangerous fish, pulling them into a tidepool, and we'll boil those waters first. Really, what we're trying to do is focus, because not everything is a threat. Consider this:
+
+![alt text](https://github.com/TITO-Threat-Intel/TITO-Framework/blob/master/IMG_034BDA4D50D3-1.JPG "Threats we care about")
+
+## Evaluate the Threat (The "T")
+
+In this phase, we determine, "threat or not." It's not as simple as tracking a threat group. I've created this graphic to demonstrate why it's not really possible to track a threat actor.
+
+![alt text](tbc "Categories for tracking")
+
+It's probably best to do something like this when you track threats:
+
+![alt text](tbc "Tracking heirarchy")
 
 ### Step 1: 
 
-## Mitigations for Ongoing threats
+## Mitigations for Ongoing Threats
 
 ### Step 1: 
 
