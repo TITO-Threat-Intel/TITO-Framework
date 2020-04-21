@@ -1,15 +1,15 @@
 # Part 3: Bridge to Operations
 
-Now that I've set the stage with broad, sweeping, and up to now rather esoteric definitions, let me change things up and present a more step-by-step approach. In this part, I'll talk about the actions you should take to use this framework, and the mitigations that allow you to:
+Now that I've set the stage with broad, sweeping, and up to now rather esoteric definitions, let me change things up and present a more step-by-step approach. In this part I'll talk about the actions you should take to use this framework and the mitigations that allow you to:
 
 * Remove high-priority threats
-* Mitigate the remaining threats
+* Reduce the impact of the threats that remain
 
 Generally, the process looks like this: 
 
 ![alt text](https://github.com/TITO-Threat-Intel/TITO-Framework/blob/master/TITO-Framework.jpg "TITO Framework")
 
-First thing first is, evaluate the threat. How do we do this, when it seems *everything* can target us? One gap, one new 0-day, and we're owned. Right? Yes, but... let's focus down first on what we can manage. The idea here is to prioritize based on potenial impact to our mission or business and broaden down from there. There's a saying you've probably heard: "You can't boil the ocean." In this phase we're casting a net for the most dangerous fish, pulling them into a tidepool, and we'll boil those waters first. Really, what we're trying to do is focus, because not everything is a threat. Consider this:
+First things first, we need to evaluate the threat. How do we do this, when it seems *everything* can target us? One gap, one new 0-day, and we're owned. Right? Yes, but... let's focus first on what we can manage. The idea here is to prioritize based on potenial impact to our mission or business and broaden down from there. There's a saying you've probably heard: "You can't boil the ocean." In this first phase we're casting a net for the most dangerous fish, pulling them into a tidepool, and we'll boil those waters first. Really, what we're trying to do is focus, because not everything is a threat. Consider this:
 
 ![alt text](https://github.com/TITO-Threat-Intel/TITO-Framework/blob/master/IMG_034BDA4D50D3-1.JPG "Threats we care about")
 
@@ -19,7 +19,7 @@ In this phase, we determine, "threat or not." It's not as simple as tracking a t
 
 ![alt text](https://github.com/TITO-Threat-Intel/TITO-Framework/blob/master/TrackThreatsHalf.jpg "Categories for tracking")
 
-It's probably best to do something like this when you track threats:
+Do we need to track threat groups? Yes, we do. First though, it's important to narrow things down. Many threat intel providers tell you what to track. Threat Actor A, IOCs related to Malware B. It's all important, yes, but you *MUST* start with PIRs. Without PIRs, you don't know where your gaps are. You can't set signposts and indicators of change. You can't really apply any analyst tradecraft. I'm my view, It's probably best to do something like this when you track threats:
 
 ![alt text](https://github.com/TITO-Threat-Intel/TITO-Framework/blob/master/Threat%20Tiers%20Half.jpg "Tracking heirarchy")
 
