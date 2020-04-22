@@ -50,10 +50,9 @@ Now that you've identified active techniques, you should understand which threat
 * Determine if you are being targeted directly
     * Are there indications the groups in this list are directly interested in compromising (or have previously compromised) elements of your Information Ecosystem, or similar infrastructure at other companies; or are targeting your company/organization by name? 
     * Have they targeted data of others, unique to the industry vertical, suggesting a pattern?
-    
-**If so, they have INTENT. Add 1 point to the base threat score for these entities.**
+    * If you answered *yes* to either of the questions above, there is INTENT. **Add 1 point to the base threat score for these entities.**
 
-* Expand your research out to understand which threat actors or groups have compromised those running the same infrastructure, the same security tools, who have very similar data, exist in the same industry vertical; or who have specifically stated an intent to target the company or organization by name. *These threats should also get one point, and their TTPs should be evaluated, even if they don't seem to be a threat to your business or organization at this time.
+* Expand your research out to understand which threat actors or groups have compromised those running the same infrastructure, the same security tools, who have very similar data, exist in the same industry vertical; or who have specifically stated an intent to target the company or organization by name. *These threats should also get **one point**, and their TTPs should be evaluated, even if they don't seem to be a threat to your business or organization at this time.*
 
 If you've done the above, you can now say you have identified what threat groups have intent. Time to move to step 3.
 
