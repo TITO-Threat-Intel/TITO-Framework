@@ -113,17 +113,17 @@ You've also grouped and started tracking everything by:
 
 ### Step 5: Removing Points
 
-1. Run **Micro Red Teaming** exercises to test all *Active Techniques*. Micro Red Teaming, in a nutshell, is the testing of a single adversary TTP at a time across an entire organization to find defensive gaps.
+* Run **Micro Red Teaming** exercises to test all *Active Techniques*. Micro Red Teaming, in a nutshell, is the testing of a single adversary TTP at a time across an entire organization to find defensive gaps.
     * Look at all TTPs on a heat map using your framework of choice
     * Develop scripts, tests; or deploy tools that emulate or execute these TTPs to test whether a technique would be successful against your organization
     * If you can eliminate enough TTPs in an attack chain, you can **remove the point** from that threat actor for **Active Techniques**.
-2. Track threat actor intent decay to target your organization per Step 2, above.
+* Track threat actor intent decay to target your organization per Step 2, above.
     * Look at how active a threat actor or tool TTP is in targeting your organization. 
     * If the tool or technique hasn't been seen, or no similar data or company in a similar vertical has been targeted by this threat actor in 6 months or more (or longer, if the retool and attack cycle by this threat is long) **remove the point** from that threat actor for **Intent to Target**. 
-3. For past attacks, assume your threat actor has established persistence mechanisms, command and control channels, and is still exfiltrating data or abusing your resources.
+* For past attacks, assume your threat actor has established persistence mechanisms, command and control channels, and is still exfiltrating data or abusing your resources.
     * Create Hunt hypotheses and conduct retrospective hunting across your entire organization
     * If no trace of the threat actor is found after doing this for some time, **remove the point** you gave for **Visibility in Logs**. 
-4. Finally, you should build in effective mitigations for *Critical and Vulnerable* items as they appear in the wild or become apparent based on your infrastructure or team composition. If you can significantly remove the impact of a current event or an internal vulnerability/weakness, **remove the point** from **Critical and Vulnerable**. 
+* Finally, you should build in effective mitigations for *Critical and Vulnerable* items as they appear in the wild or become apparent based on your infrastructure or team composition. If you can significantly remove the impact of a current event or an internal vulnerability/weakness, **remove the point** from **Critical and Vulnerable**. 
 
 Alright! Now you know how to add points to a threat, and how to remove points. I know in most organizations, Threat Intelligence won't be running Threat Hunting or a leading a Red Team. They likely won't be developing mitigating controls to threats, or involved in patching systems as a Vulnerability Management team might. However, if your company or organization wants to **reduce** the threats from these threat actors or groups based on the TITO Framework, Threat Intel will provide feedback to assist stakeholders executing these efforts. We can even use the scoring to automate ticket generation, point removal when the tickets are closed, and an automatic reprioritization of threats to the org based on the actions taken. 
 
@@ -172,7 +172,7 @@ If you've done a thorough assessment of what resources or systems are being targ
 
 Every attacker has a motivation, but this may be hard to know or discover. Even if we could, it would be very hard to influence this. Every attacker does have a *scheme* in mind however, and by examining attacker behavior, targets, and origins we can build logical stories or use cases for what the attacker might be trying to accomplish, their desired *outcomes*. If we understand this, it helps us disrupt attackers' chances for success at many levels.
 
-### Step 1: Map the Scheme
+#### Map the Scheme
 
 * Considering past actions, targets, and stated motivations; make a list of every possible hypothesis for *what a threat actor hopes to achieve* by targeting your data, people, or resources. Some are easy to imagine: for example, a ransomware attack. Other may be more difficult. Use historical examples, your own experience, and notional scenarios based on logic. 
 
@@ -183,11 +183,11 @@ Every attacker has a motivation, but this may be hard to know or discover. Even 
     * How does the above objectives help the attacker **further** the scheme? This is the *Result*.
 * Build the attack chain, or *scheme*, end to end, by filling in the following blanks:
 
-![alt text](https://github.com/TITO-Threat-Intel/TITO-Framework/blob/master/attack-scheme.jpg "Schemes")
+![alt text](https://github.com/TITO-Threat-Intel/TITO-Framework/blob/master/AttackScheme.jpg "Schemes")
 
 Build as many hypotheses on the attack scheme as possible, looking for intersections across *actions* and *outcomes* in multiple stories. By doing this, you'll find quick wins; that is, things you can influence by your own actions or defenses that will have the biggest impact to the attacker.
 
-### Step 2: Defeating the Scheme
+#### Defeat the Scheme
 
 Now that you know what the attacker is doing, and have estimated the probable next step, you can build defenses against possible future actions. This is how we build a *predictive* threat intelligence capability. These things will be **highly** specialized to the business or organization. 
 
