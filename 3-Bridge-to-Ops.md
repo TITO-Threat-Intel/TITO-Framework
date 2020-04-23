@@ -106,7 +106,7 @@ You've also grouped and started tracking everything by:
 * Then, by named threat group, actor or campaign; tool; TTP per a framework
 * Finally, by IOC (+ IOC pivoting)
 
-**NOTE:** Tracking all this in a spreadsheet, blog, etc. is a terrible idea. Make sure you use a system where you can use *tags*. Knowlege management is outside the scope of this framework, but it needs to be considered at the start. of any asset tracking endeavor. 
+**NOTE:** Tracking all this in a spreadsheet, blog, etc. is a terrible idea. Make sure you use a system where you can use *tags*. Knowlege management is outside the scope of this framework, but it needs to be considered at the start of any asset tracking endeavor. 
 
 **Reducing the Threat** is critical to threat prioritization, and this is *Step 5*. Once you've added a point, what do we do to *remove* that point?
 
@@ -115,18 +115,18 @@ You've also grouped and started tracking everything by:
 * Run **Micro Red Teaming** exercises to test all *Active Techniques*. Micro Red Teaming, in a nutshell, is the testing of a single adversary TTP at a time across an entire organization to find defensive gaps.
     * Look at all TTPs on a heat map using your framework of choice
     * Develop scripts, tests; or deploy tools that emulate or execute these TTPs to test whether a technique would be successful against your organization
-    * If you can eliminate enough TTPs in an attack chain, you can **remove the point** from that threat actor for **Active Techniques**.
-* Track threat actor intent decay to target your organization per Step 2, above.
-    * Look at how active a threat actor or tool TTP is in targeting your organization. 
-    * If the tool or technique hasn't been seen, or no similar data or company in a similar vertical has been targeted by this threat actor in 6 months or more (or longer, if the retool and attack cycle by this threat is long) **remove the point** from that threat actor for **Intent to Target**. 
-* For past attacks, assume your threat actor has established persistence mechanisms, command and control channels, and is still exfiltrating data or abusing your resources.
+    * If you can eliminate enough TTPs in an attack chain, you can **remove the point** from that threat actor for **Active Techniques**
+* Track threat actor intent decay to target your organization per Step 2, above
+    * Look at how active a threat actor or tool TTP is in targeting your organization 
+    * If the tool or technique hasn't been seen, or no similar data or company in a similar vertical has been targeted by this threat actor in 6 months or more (or longer, if the retool and attack cycle by this threat is long) **remove the point** from that threat actor for **Intent to Target** 
+* For past attacks, assume your threat actor has established persistence mechanisms, command and control channels, and is still exfiltrating data or abusing your resources
     * Create Hunt hypotheses and conduct retrospective hunting across your entire organization
-    * If no trace of the threat actor is found after doing this for some time, **remove the point** you gave for **Visibility in Logs**. 
+    * If no trace of the threat actor is found after doing this for some time, **remove the point** you gave for **Visibility in Logs**
 * Finally, you should build in effective mitigations for *Critical and Vulnerable* items as they appear in the wild or become apparent based on your infrastructure or team composition. If you can significantly remove the impact of a current event or an internal vulnerability/weakness, **remove the point** from **Critical and Vulnerable**. 
 
-Alright! Now you know how to add points to a threat, and how to remove points. I know in most organizations, Threat Intelligence won't be running Threat Hunting or a leading a Red Team. They likely won't be developing mitigating controls to threats, or involved in patching systems as a Vulnerability Management team might. However, if your company or organization wants to **reduce** the threats from these threat actors or groups based on the TITO Framework, Threat Intel will provide feedback to assist stakeholders executing these efforts. We can even use the scoring to automate ticket generation, point removal when the tickets are closed, and an automatic reprioritization of threats to the org based on the actions taken. 
+Alright! Now you know how to add points to a threat, and how to remove points. I know in most organizations, Threat Intelligence won't be running Threat Hunting or a leading a Red Team. They likely won't be developing mitigating controls to threats, or be involved in patching systems as a Vulnerability Management team might. However, if your company or organization wants to **reduce** the threats from these threat actors or groups based on the TITO Framework, Threat Intel will provide feedback to assist stakeholders executing these efforts. We can even use the scoring to automate ticket generation, point removal when the tickets are closed, and an automatic reprioritization of threats to the org based on the actions taken. 
 
-If Threat Intelligence identifies the elevated risk based on TITO elements, provides the evidence, and gives the organization real levers to reduce this score, you'll have a real, measurable impact to security. Or, if there's resistance, you can wait it out and let natural decay reduce the score for you. Not ideal, but it's a method and you'll certainly have done your job providing the appropriate threat warning. 
+If Threat Intelligence identifies an elevated risk based on TITO elements, provides the evidence, and gives the organization real levers to reduce this score, you'll have a direct and measurable impact to security. Or, if there's resistance, you can wait it out and let natural decay reduce the score for you. Not ideal, but it's a method and you'll certainly have done your job providing the appropriate threat warning. 
 
 Threats with points are *Ongoing Threats* and to mitigate these, there are a few things to do in parallel to the above. Those are covered in the next section below. 
 
@@ -151,7 +151,7 @@ If you can block or mitigate the adversary's infrastructure, you will greatly re
 
 ### Step 2: Target
 
-In the adversaries chain of attack or attack scheme, there will be a logical target. Is the attacker going after individuals in your finance department? Does the attacker target unpatched Windows servers with a specific exploit? Does the attacker attempt to disable a specific security tool? There are many more questions you can ask, but you get the point. Your goal here should be to identify the systems targeted by the attacker internally. If you you've already mapped attacker TTPs to a standard framework you can simply map **ATTACKER TTP** --> **SYSTEM/PERSON/DATA IMPACTED BY TTP**. The latter is the *target* of the attack, and you can do this for each phase of the attacker scheme as it pertains to your information ecosystem.
+In the adversary's chain of attack or attack scheme, there will be a logical target. Is the attacker going after individuals in your finance department? Does the attacker target unpatched Windows servers with a specific exploit? Does the attacker attempt to disable a specific security tool? There are many more questions you can ask, but you get the point. Your goal here should be to identify the systems targeted by the attacker internally. If you you've already mapped attacker TTPs to a standard framework you can simply map **ATTACKER TTP** --> **SYSTEM/PERSON/DATA IMPACTED BY TTP**. The latter is the *target* of the attack, and you can do this for each phase of the attacker scheme as it pertains to your information ecosystem.
 
 Again, this will look different for every organization or business. Build a list of your resources targeted by your threat actors, campaigns, etc.
 
@@ -163,13 +163,13 @@ Again, this will look different for every organization or business. Build a list
     * Limit privileges, admins, accessibility from the targeted resource
     * Patch and modernize!
     * Backup the data and build in redundancies for this asset
-* Initiate threat hunts, assuming the actor is already in your environment (if found, you may need to add )
+* Initiate threat hunts, assuming the actor is already in your environment (if found unexpectedly, you may need to up the threat score!)
 
 If you've done a thorough assessment of what resources or systems are being targeted and take these steps, your SOC/Blue Team will be in a better position to respond to and defend these assets.
 
 ### Step 3: Outcomes
 
-Every attacker has a motivation, but this may be hard to know or discover. Even if we could, it would be very hard to influence this. Every attacker does have a *scheme* in mind however, and by examining attacker behavior, targets, and origins we can build logical stories or use cases for what the attacker might be trying to accomplish, their desired *outcomes*. If we understand this, it helps us disrupt attackers' chances for success at many levels.
+Every attacker has a motivation, but this may be hard to know or discover. Even if we could, it would be very hard to influence this. Every attacker does have a *scheme* in mind however, and by examining attacker behavior, targets, and origins we can build logical stories or use cases for what the attacker might be trying to accomplish -- their desired *outcomes*. If we understand this, it helps us disrupt attackers' chances for success at many levels.
 
 #### Map the Scheme
 
@@ -179,7 +179,7 @@ Every attacker has a motivation, but this may be hard to know or discover. Even 
     * What are the known or attempted targets of the threat actor or group you're following?
     * What exactly has the threat actor **done** to access or misuse the target? This is the *Action*.
     * What, in your estimation, is the attacker **trying to achieve** by taking above action? This is the *Objective*. 
-    * How does the above objectives help the attacker **further** the scheme? This is the *Result*.
+    * How does the above objective help the attacker **further** the scheme? This is the *Result*.
 * Build the attack chain, or *scheme*, end to end, by filling in the following blanks:
 
 ![alt text](https://github.com/TITO-Threat-Intel/TITO-Framework/blob/master/AttackScheme.jpg "Schemes")
@@ -190,11 +190,11 @@ Build as many hypotheses on the attack scheme as possible, looking for intersect
 
 Now that you know what the attacker is doing, and have estimated the probable next step, you can build defenses against possible future actions. This is how we build a *predictive* threat intelligence capability. These things will be **highly** specialized to the business or organization. 
 
-* List what provides value to the attacker in the scheme, and remove the value. For example, if your attacker targets credentials you can use salted hashes, enable MFA globally, etc.
-    * In the sentence, The attacker does ________ in order to ________, allowing him/her to ________; your action should keep the attacker from doing bridging the outcome and result.
+* **De-incentivize**: List what provides value to the attacker in the scheme, and remove the value. For example, if your attacker targets credentials you can use salted hashes, enable MFA globally, etc.
+    * In the sentence, The attacker does ________(action) in order to ________(outcome), allowing him/her to ________(result); your action should keep the attacker from doing bridging the outcome and result.
     * Even if the attacker manages to accomplish the *outcome* then, the *result* will not be what the attacker expects
-* Look at what the attacker is trying to accomplish, the *outcome*, and determine how the attacker knows if he/she is successful. Are they expecting a certain server response? A particular banner message? A specific http status code? Can you delay the drop in a connection? If you can determine your traffic is not legitimate, provide random or confusing results that keep the attacker from being able to retool or know where their attack failed. Immediate feedback is the worst! 
-* "Booby trap" the attacker's process flow. If you can identify attacker infrastructure or targets, even retrospectively, blocking and forgetting may not be the best answer. Use *honeytokens*, fake portals, fake leaked credentials, fake documents... use your imagination. The idea is to create high fidelity signals that alert you to badness without damaging the user experience of legitimate users. You want to increase the friction here to attackers. 
+* **Remove Feedback Loop**: Look at what the attacker is trying to accomplish, the *outcome*, and determine how the attacker knows if he/she is successful. Are they expecting a certain server response? A particular banner message? A specific http status code? Can you delay the drop in a connection? If you can determine your traffic is not legitimate, provide random or confusing results that keep the attacker from being able to retool or know where their attack failed. Immediate feedback is the worst! 
+* **"Booby trap"** the attacker's process flow. If you can identify attacker infrastructure or targets, even retrospectively, blocking and forgetting may not be the best answer. Use *honeytokens*, fake portals, fake leaked credentials, fake documents... use your imagination. The idea is to create high fidelity signals that alert you to badness without damaging the user experience of legitimate users. You want to increase the friction here to attackers. 
 
 For the above three steps, remember to first build the stories, and then look for the actions you can take that have the biggest impact across intersections in your hypotheses. This way you can have the biggest impact to attacker behavior. You're not looking for the most *diagnostic* data to prove your hypothesis, you're trying to cause the most possible friction to the attacker. In an *Analysis of Competing Hypotheses* exercise you'd typically throw out common observations as non-diagnostic. We don't want to do that here. We WANT to see those commonalities, the "choke points," in adversarial behavior. This is where we draw in the attacker; detect, deceive, and defeat them. 
 
@@ -202,17 +202,17 @@ For the above three steps, remember to first build the stories, and then look fo
 
 In summary, the framework has two key phases: 
 
-1) Identify what is a threat, and take actions to remove this threat (The "T"). This is cutting the head off the beast.
-2) Prioritize what threats remain or are active, and mitigate them (The "ITO"). 
-    * The *I* helps by working against external attacker infrastructure
-    * The *T* helps by defending and hardening internal information nodes and links (e.g., servers and ports)
-    * The *O* helps by defending against data attacks
+1) Identify what is a threat, and take actions to remove this threat (The "T"). The -**T**- is finding and cutting the head off the beast.
+2) Prioritize what threats remain or are active, and mitigate them (The "ITO") 
+    * The -**I**- helps by working against external attacker infrastructure
+    * The -**T**- helps by defending and hardening internal information nodes and links (e.g., servers and ports)
+    * The -**O**- helps by defending against data attacks
 
 Key elements that enable the framework:
-* Start with PIRs (your link to impact to business), track responsiveness to PIRs, and group threats in context of ability to compromise the information ecosystem in context of PIRs
-* Tracking named threat groups, campaigns; and collect IOCs in context of PIRs
-* An analyst's job is to "think about thinking," identifying data gaps and hidden relationships. If you're not doing this, you can (and should) be replaced by a robot.
-* Proactively grow your internal stakeholders. Threat Intel should be a service to all Defenders.
+* Start with PIRs (your link to impact-to-business), track responsiveness to PIRs, and group threats in context of ability to compromise the information ecosystem in context of PIRs
+* Track named threat groups, campaigns; and collect IOCs in context of PIRs
+* The analyst's job is to "think about thinking," identifying data gaps and hidden relationships. If you're not doing this, you can (and should) be replaced by a robot. =)
+* Proactively grow your internal stakeholders: Threat Intel should be a service to all Defenders.
 
 Finally, these are just my thoughts, **a** way but not **the** way, to operationalize threat intelligence to have a real impact on security. They reflect my personal opinions; and in no way reflect the opinions or methods of operations of any of my employers, current or past.
 
