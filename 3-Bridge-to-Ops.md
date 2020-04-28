@@ -138,13 +138,14 @@ So far, I've talked about how to scope threats and how to deprioritize or remove
 
 You can slow most threat actors and commodity threats by identifying and de-fanging infrastructure used to target your information ecosystem. As a threat intelligence analyst, identifying bad infrastructure and pivoting to find associated attack vectors should be part of your normal routine. Are you looking for fast flux DNS, DGAs, known proxies and TOR exit notes? Are you looking at passive DNS? Do you have a handle on bulletproof hosting providers? Have you looked at web or proxy logs for badness? Start with what you can do, and work to fill in visibility gaps. So you should: 
 
-* Block or mitigate malicious infrastructure:
+* Mitigate malicious infrastructure:
     * Using technical solutions such as email gateways, WAFs, anti-phishing tools, DNS monitoring/blocking, zero trust/software defined perimeter tools, IPS, MFA, etc. (Match solution with attacker methods!)
     * Rate limiting
-    * Blacklisting
+    * Blacklisting/Blocking -- **use caution** doing this: There may be unforeseen consequences to operations!
     * Sinkholing
     * Proxying to a honeypot/honeynet
     * Reporting/Initiating account takedowns
+    * Etc. (your case will determine actions!)
 * Continue to monitor threat actor for changes in infrastructure used (find data gaps) or attempts to circumvent your mitigations (both inbound and outbound)
 
 If you can block or mitigate the adversary's infrastructure, you will greatly reduce the impact of the threat.
