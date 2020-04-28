@@ -56,12 +56,12 @@ Before we simplify, score, and and operationalize everything, let's talk about t
 
 ### One Attacker's Scheme
 
-Imagine a criminal would like make some extra cash to buy some new sneakers. This threat actor has found a large dump of user credentials in an open file share, and has decided to test these credentials using an automated tool on paid streaming video sites, subscription services, etc. About 4% of these credentials worked on certain paid sites, and the threat actor has listed these accounts for sale on a .onion page. Here's how this scheme would look: 
+Imagine a criminal would like to make some extra cash to buy some new sneakers. This threat actor has found a large dump of user credentials in an open file share, and has decided to test these credentials using an automated tool on paid streaming video sites, subscription services, etc. About 4% of these credentials worked on certain paid sites, and the threat actor has listed these accounts for sale on a .onion page. Here's how this scheme would look: 
 
 Action | Objective | Result
 ------ | --------- | ------
 Access File Share | Find Credentials | Obtain Credentials to Test
-Create Automated Tool Confiig | Weaponize Tool | Automate Attack on Subscription Sites
+Create Automated Tool Config | Weaponize Tool | Automate Attack on Subscription Sites
 Scan Subscription Sites | Find Valid Credentials | Build List of Valid Credentials to Sell
 Create .onion | Offer List for Sale | Host Safe Purchase Site
 Post .onion on IRCs, Forums, Etc. | Market Subscription Accounts Sale | Generate Sales
