@@ -225,5 +225,5 @@ Here's a small sample of metrics you can use to determine if your efforts are ha
 * Threat: How many threat actor groups have a score of 2 or greater? *Work to reduce % of threat actors with a score 2 or greater.*
 * Threat: How long does a threat actor sit at score 4/3/2 without a reduction? *Work to reduce the time it takes to reduce the threat score*
 * Infrastructure: What percentage of active attack vectors have mitigations built in? *Strive for 100%*
-* Targets: On what percentage of Targets have visibility? Defense in depth? *Strive for 100%*
+* Targets: On what percentage of Targets have you developed or increased visibility? Defense in depth? *Strive for 100%*
 * Outcomes: How often are fake data, randomized responses, or deceptions triggered? What is the FP rate? Work to drive FP rate to zero.
