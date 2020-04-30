@@ -228,3 +228,11 @@ Here's a small sample of metrics you can use to determine if your efforts are ha
 * Infrastructure: What percentage of active attack vectors have mitigations built in? *Strive for 100%*.
 * Targets: On what percentage of Targets have you developed or increased visibility? Defense in depth? *Strive for 100%*.
 * Outcomes: How often are fake data, randomized responses, or deceptions triggered? What is the FP rate? *Work to drive FP rate to zero*.
+
+## Some Useful Documents
+
+Here's a Checklist I quickly put together to help sum up the "T": Threat Identification and Reduction. I also added some steps for Reporting and Feedback. This is a suggestion for implementation, not a prescription. I consider managing this part the *core* of TITO, and certainly a basic implementation if you were to stop here:
+
+![alt text](https://github.com/TITO-Threat-Intel/TITO-Framework/blob/master/Threat_ID_Reduction_Reporting.jpg "Threat ID, Reduction, Reporting")
+
+Stay tuned for more content!
