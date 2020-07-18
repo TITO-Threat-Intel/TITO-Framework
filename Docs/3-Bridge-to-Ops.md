@@ -7,21 +7,21 @@ Now that I've set the stage with broad, sweeping, and up to now rather esoteric 
 
 Generally, the process looks like this: 
 
-![alt text](https://github.com/TITO-Threat-Intel/TITO-Framework/blob/master/TITO-Framework.jpg "TITO Framework")
+![alt text](https://github.com/TITO-Threat-Intel/TITO-Framework/blob/master/Images/TITO-Framework.jpg "TITO Framework")
 
 First things first, we need to evaluate the threat. How do we do this, when it seems *everything* can target us? One gap, one new 0-day, and we're owned. Right? Yes, but... let's focus first on what we can manage. The idea here is to prioritize based on potential impact to our mission or business and broaden down from there. There's a saying you've probably heard: "You can't boil the ocean." In this first phase we're casting a net for the most dangerous fish, pulling them into a tidepool, and we'll boil those waters first. Really, what we're trying to do is focus, because not everything is a threat. Consider this:
 
-![alt text](https://github.com/TITO-Threat-Intel/TITO-Framework/blob/master/IMG_034BDA4D50D3-1.JPG "Threats we care about")
+![alt text](https://github.com/TITO-Threat-Intel/TITO-Framework/blob/master//Images/IMG_034BDA4D50D3-1.JPG "Threats we care about")
 
 ## Evaluating and Reducing the Threat (The "T")
 
 In this phase, we determine, "threat or not." It's not as simple as tracking a threat group. I've created this graphic to demonstrate why it's not really possible to track a threat actor group alone:
 
-![alt text](https://github.com/TITO-Threat-Intel/TITO-Framework/blob/master/TrackThreatsHalf.jpg "Categories for tracking")
+![alt text](https://github.com/TITO-Threat-Intel/TITO-Framework/blob/master/Images/TrackThreatsHalf.jpg "Categories for tracking")
 
 Do we need to track threat groups? Yes, we do. First though, it's important to narrow things down. Many threat intel providers tell you what to track: Threat Actor A, IOCs related to Malware B. It's all important, yes, but you *MUST* start with PIRs. Without PIRs, you don't know where your gaps are. You can't set signposts and indicators of change. You can't really apply any analyst tradecraft. I'm my view, It's probably best to do something like this when you track threats:
 
-![alt text](https://github.com/TITO-Threat-Intel/TITO-Framework/blob/master/Threat%20Tiers%20Half.jpg "Tracking heirarchy")
+![alt text](https://github.com/TITO-Threat-Intel/TITO-Framework/blob/master//Images/Threat%20Tiers%20Half.jpg "Tracking heirarchy")
 
 Let me break it all into steps.
 
@@ -141,7 +141,7 @@ You can slow most threat actors and commodity threats by identifying and de-fang
 * Mitigate malicious infrastructure:
     * Using technical solutions such as email gateways, WAFs, anti-phishing tools, DNS monitoring/blocking, zero trust/software defined perimeter tools, IPS, MFA, etc. (Match solution with attacker methods!)
     * Rate limiting
-    * Blacklisting/Blocking -- **use caution** doing this: There may be unforeseen consequences to operations!
+    * Blocklisting/Blocking -- **use caution** doing this: There may be unforeseen consequences to operations!
     * Sinkholing
     * Proxying to a honeypot/honeynet
     * Reporting/Initiating account takedowns
