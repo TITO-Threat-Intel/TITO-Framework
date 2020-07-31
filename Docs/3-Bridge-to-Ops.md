@@ -183,7 +183,7 @@ Every attacker has a motivation, but this may be hard to know or discover. Even 
     * How does the above objective help the attacker **further** the scheme? This is the *Result*.
 * Build the attack chain, or *scheme*, end to end, by filling in the following blanks:
 
-![alt text](https://github.com/TITO-Threat-Intel/TITO-Framework/blob/master/AttackScheme.jpg "Schemes")
+![alt text](https://github.com/TITO-Threat-Intel/TITO-Framework/blob/master//Images/AttackScheme.jpg "Schemes")
 
 Build as many hypotheses on the attack scheme as possible, looking for intersections across *actions* and *outcomes* in multiple stories. By doing this, you'll find quick wins; that is, things you can influence by your own actions or defenses that will have the biggest impact to the attacker.
 
